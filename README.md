@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Atomic Swap Workshop
 
 This repository contains a simple Proof of Concept (PoC) demonstrating a basic Hash Time-Locked Contract (HTLC) in Solidity.
@@ -46,3 +47,7 @@ npx hardhat run scripts/deploy.js --network localhost
 ---
 
 Made for the Chief Product Strategist application 🚀
+=======
+# atomic-swap-workshop
+atomic-swap-workshop
+>>>>>>> d4d8441a038ede29b5bfb1338f2eef498f5e09d5
