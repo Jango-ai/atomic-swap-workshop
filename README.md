@@ -40,6 +40,6 @@ npx hardhat run scripts/deploy.js --network localhost
 
 ## 🧠 Learning Resources
 
-- [Komodo AtomicDEX](https://komodoplatform.com/atomicdex)
+- [Komodo AtomicDEX]([https://komodoplatform.com/atomicdex](https://komodoplatform.com/en/docs/komodo-defi-framework/))
 - [Hardhat Documentation](https://hardhat.org/)
-- [HTLC Explained](https://cointelegraph.com/explained/what-are-hash-time-locked-contracts-htlcs)
+- [HTLC Explained]([https://cointelegraph.com/explained/what-are-hash-time-locked-contracts-htlcs](https://www.ledger.com/academy/glossary/hashed-timelock-contract-htlc#:~:text=A%20Hashed%20TimeLock%20Contract%20is,around%20revealing%20a%20secret%20key.))
