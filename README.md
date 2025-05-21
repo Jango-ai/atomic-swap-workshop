@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Atomic Swap Workshop
 
 This repository contains a simple Proof of Concept (PoC) demonstrating a basic Hash Time-Locked Contract (HTLC) in Solidity.
