@@ -1,16 +1,24 @@
 const hre = require("hardhat");
+const crypto = require("crypto");
 
 async function main() {
   const [deployer] = await hre.ethers.getSigners();
 
-  const hashlock = hre.ethers.utils.sha256(hre.ethers.utils.toUtf8Bytes("mySecret"));
+  const secret = "mySecret";
+  const hashlock = "0x" + crypto.createHash("sha256").update(secret).digest("hex");
+
+  const ethAmount = hre.ethers.parseEther("1.0");
 
   const AtomicSwap = await hre.ethers.getContractFactory("AtomicSwap");
-  const swap = await AtomicSwap.deploy(deployer.address, hashlock, 3600, { value: hre.ethers.utils.parseEther("1.0") });
+  const swap = await AtomicSwap.deploy(
+    deployer.address,
+    hashlock,
+    3600,
+    { value: ethAmount }
+  );
 
-  await swap.deployed();
-
-  console.log("AtomicSwap deployed to:", swap.address);
+  // 👇 ya no hace falta await swap.deployed()
+  console.log("✅ AtomicSwap deployed to:", await swap.getAddress());
 }
 
 main().catch((error) => {
